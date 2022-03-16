@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/employeepayroll.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="font">
+    <script type="text/javascript" src="../js/EmployeePayRollForm.js"></script>
+    <script type="text/javascript" src="../js/EmployeePayrollData.js"></script>
     <title>Add employeepayroll form</title>
 </head>
 <body>
     <header class="header-content header">
-        <div class="logo-content" onclick="location.href='./EmployeePayrollHomePage.html'">
+        <div class="logo-content" onclick="">
             <img src="../assets/images/logo.png" alt="logo">
             <div>
                 <span class="emp-text">EMPLOYEE</span><br>
@@ -19,7 +21,7 @@
         </div>
     </header> 
     <div class="form-content">
-        <form class="form" onsubmit="save(event)">
+        <form class="form" action="#"  onreset="resetForm()" onsubmit="save(event)">
             <div class="form-head">Employee Payroll Form</div>
             <div class="row-content">
                 <label for="name" class="label text">Name</label>
@@ -153,7 +155,7 @@
                 <textarea id="notes" class="input" name="Notes" placeholder="" style="height:100px"></textarea>
             </div>
        <div class="buttonParent">
-    <a href="../HTML/EmployeePayrollHomePage.html" class="resetButton button cancelButton">Cancel</a>
+    <a href="" class="resetButton button cancelButton">Cancel</a>
     <div class="submit-reset">
         <button type="submit" class="button submitButton">Submit</button>
         <button type="reset" class="resetButton button">Reset</button>
