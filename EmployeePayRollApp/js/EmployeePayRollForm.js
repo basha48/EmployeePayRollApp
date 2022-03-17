@@ -125,7 +125,7 @@ function getSelectedValues(propertyValue) {
 }
 
 function createAndUpdateStorage(employeePayrollData) {
-  localStorage.clear();
+  
   let employeePayrollList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
   if (employeePayrollList != undefined) {
       employeePayrollList.push(employeePayrollData);
@@ -133,7 +133,6 @@ function createAndUpdateStorage(employeePayrollData) {
       employeePayrollList = [employeePayrollData];
   }
   localStorage.setItem("EmployeePayrollList", JSON.stringify(employeePayrollList));
-
 }
 
 function resetButton() {
